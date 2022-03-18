@@ -31,6 +31,9 @@ app.set("view engine", "ejs"); // view 엔진을 ejs를 쓰겠다.
 
 // use는 미들 웨어를 등록해주는 메서드이다. 
 app.use("/", home); 
+app.use(express.static(`${__dirname}/src/public`)) // static이란 메서드로 정적 경로를 추가해줄것임. 
+
+//__dirname는 현재 디렉토리이름을 가져오는것 현재 app.js가 있는 디렉토리이름을 가져오게된다.
 
 
 // app 내보내주기
