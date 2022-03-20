@@ -20,5 +20,16 @@ function login() {
             "content-Type" : "application/json",
     },
         body: JSON.stringify(req) // JSON으로 감싸기 stringify는 문자열로 바꿔주는메서드 
-    }).then((res) => res.json()).then((res) => res);
+    })
+    .then((res) => res.json())
+    .then((res) => {
+        if (res.success) {
+            location.href = "/"; // 성공하면 이동하게 함 (여기는 루트입니다.라는곳으로)
+        } else { 
+            alert(res.msg); // 실패했다고 뜬다.
+        }
+    })
+    .catch((err) => {
+        console.error(new Error("로그인 중 에러 발생"))
+    });
 }
