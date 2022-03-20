@@ -30,9 +30,13 @@ app.set("views", "./src/views"); // views 라는 엔진 세팅 npm install ejs -
 app.set("view engine", "ejs"); // view 엔진을 ejs를 쓰겠다.
 
 // use는 미들 웨어를 등록해주는 메서드이다. 
-app.use("/", home); 
 app.use(express.static(`${__dirname}/src/public`)) // static이란 메서드로 정적 경로를 추가해줄것임. 
+app.use(express.json());
+app.use(express.urlencoded({extended: true})); // URL을 통해 전달되는 데이터에 한글, 공백 등과 같은 문자가 포함될 경우 제대로 인식되지 않는 문제 해결
 
+
+
+app.use("/", home); 
 //__dirname는 현재 디렉토리이름을 가져오는것 현재 app.js가 있는 디렉토리이름을 가져오게된다.
 
 

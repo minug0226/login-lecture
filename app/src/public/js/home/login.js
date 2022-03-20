@@ -17,8 +17,8 @@ function login() {
     fetch("/login", {
         method: "POST", // Restful API에 관련된것
         headers: { 
-            "content-Type" : "application/json"
+            "content-Type" : "application/json",
     },
         body: JSON.stringify(req) // JSON으로 감싸기 stringify는 문자열로 바꿔주는메서드 
-    })
+    }).then((res) => res.json()).then((res) => res);
 }
