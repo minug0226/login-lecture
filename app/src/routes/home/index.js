@@ -10,6 +10,7 @@ router.get("/", ctrl.output.home);
 
 // /<- 꼭 넣어줘야한다.
 router.get("/login", ctrl.output.login);
+router.get("/register", ctrl.output.register);
 router.post("/login", ctrl.process.login);
 
 // 외부 파일에서도 실행 할 수 있도록 module.exprots를 사용
