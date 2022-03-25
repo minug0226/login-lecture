@@ -1,25 +1,22 @@
-<!DOCTYPE html>
-<!-- ko로 해야 한글 문서로 알아듣는다. -->
-<html lang="ko"> 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/home/login.css">
-    <script src="/js/home/login.js" defer></script>
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="/css/home/login.css">
+<script src="/js/home/login.js" defer></script>
+<title>Document</title>
 </head>
 <body>
-    <div class="login">
-        <h1>로그인</h1>
-        <form method="post">
-            <input id="id" type="text" name="u" placeholder="아이디" required="required" />
-            <input id="password" type="password" name="p" placeholder="비밀번호" required="required" />
-            <button type="submit" class="btn btn-primary btn-block btn-large">접속 하기</button>
-            <p class="message">가입이 필요하신가요?  <a href="/register"> 가입 하기</a></p>
-        </form>
-    </div>
+<div class="login-page">
+  <div class="form">
+    <form class="login-form">
+      <input id="id" type="text" placeholder="아이디"/>
+      <input id="psword" type="password" placeholder="비밀번호"/>
+      <p id="button">login</p id="button">
+      <p class="message">Not registered? <a href="/register">Create an account</a></p>
+    </form>
+  </div>
+</div>
 </body>
 </html>
 
-<!-- Copyright (c) 2022 by Tyler Fry (https://codepen.io/frytyler/pen/nJYVEO) -->
+<!-- Copyright (c) 2021 by Aigars Silkalns (https://codepen.io/colorlib/pen/rxddKy) -->

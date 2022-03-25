@@ -1,27 +1,26 @@
 <!DOCTYPE html>
-<!-- ko로 해야 한글 문서로 알아듣는다. -->
-<html lang="ko"> 
+<html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/home/login.css">
-    <script src="/js/home/register.js" defer></script>
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="/css/home/login.css">
+  <script src="/js/home/register.js" defer></script>
+  <title>Document</title>
 </head>
 <body>
-    <div class="register">
-        <h1>회원가입</h1>
-        <form method="post">
-            <input id="id" type="text" name="u" placeholder="아이디" required="required" />
-            <input id="name" type="text" name="u" placeholder="이름" required="required" />
-            <input id="password" type="password" name="p" placeholder="비밀번호" required="required" />
-            <input id="confirm-password" type="password" name="p" placeholder="비밀번호 확인" required="required" />
-            <p id= "button" type="submit" class="btn btn-primary btn-block btn-large">회원가입</p id= "button">
-            <p class="message">회원가입 하셨나요? <a href="/login">로그인하러 가기 </a></p>
-        </form>
+  <div class="login-page">
+    <div class="form">
+      <form class="login-form">
+        <input id="id" type="text" placeholder="아이디"/>
+        <input id="name" type="text" placeholder="이름"/>
+        <input id="psword" type="password" placeholder="비밀번호"/>
+        <input id="confirm-psword" type="password" placeholder="비밀번호 확인"/>
+        <p id="button">SIGN UP</p>
+        <p class="message">Already registered? <a href="/login">login</a></p>
+      </form>
     </div>
+  </div>
 </body>
 </html>
-
 <!-- Copyright (c) 2022 by Tyler Fry (https://codepen.io/frytyler/pen/nJYVEO) -->

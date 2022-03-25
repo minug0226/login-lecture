@@ -4,7 +4,7 @@
 
 const id = document.querySelector("#id"); // 질의 선택자 ("선택자")를 가져올수있다. #id -> 태그에 id로 부여되는애를 선택해서 "id" 가져올수있도록
 const password = document.querySelector("#password");
-const loginBtn = document.querySelector("button");
+const loginBtn = document.querySelector("#button");
 
 loginBtn.addEventListener("click", login);
 
