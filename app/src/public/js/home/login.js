@@ -10,8 +10,8 @@ loginBtn.addEventListener("click", login);
 
 function login() {
     const req = {
-        id : id.value,
-        password : password.value,
+      id: id.value,
+      password: password.value,
     };
     // 데이터를 전달하는 과정
     fetch("/login", {
@@ -23,13 +23,13 @@ function login() {
     })
     .then((res) => res.json())
     .then((res) => {
-        if (res.success) {
+       if (res.success) {
             location.href = "/"; // 성공하면 이동하게 함 (여기는 루트입니다.라는곳으로)
         } else { 
             alert(res.msg); // 실패했다고 뜬다.
         }
     })
     .catch((err) => { 
-        console.error(new Error("로그인 중 에러 발생"))
+        console.error(("로그인 중 에러 발생"))
     });
 }
